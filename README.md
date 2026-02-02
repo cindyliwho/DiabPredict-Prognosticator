@@ -1,7 +1,6 @@
 # Demystifying ML
 
-This repository contains the relative files and codes for the 4th and final project at
-the UofT Data Analytics course. The main goal of this project is to build and compare 
+The main goal of this project is to build and compare 
 models that can accurately predict if an individual has Diabetes given a set of information.   
 
 ## Dataset
@@ -19,17 +18,17 @@ different individuals.
 
 ### First model
 
-For our First model, we chose to use the first dataset. It was chosen based on a function that compares different algorithms and shows the best accuracy score depending on the dataset it receives. 
+For the First model, I chose to use the first dataset. It was chosen based on a function that compares different algorithms and shows the best accuracy score depending on the dataset it receives. 
 
 #### Tasks
 
-1. Evaluating our dataset to get a better understanding of its distribution.
+1. Evaluating the dataset to get a better understanding of its distribution.
 2. Processing the necessary columns and scaling our data.
 2. Defining a function that compares different algorithms to find the best one matching the dataset.
 3. Evaluating the result and defining our final Model for Diabetes predictions.
 
 #### Summary of model
-After data evaluation and processing using Pandas, We passed our scaled training data to a function that fits the dataset to some chosen algorithms such as Logistic_regression, Decision Tree, and RandomForest, indicating which model can give us the best accuracy. On this dataset, Random Forest had the highest score among the models so we chose it for the final model to make predictions based on the dataset's input features that it receives.
+After data evaluation and processing using Pandas, I passed the scaled training data to a function that fits the dataset to some chosen algorithms such as Logistic_regression, Decision Tree, and RandomForest, indicating which model can give the best accuracy. On this dataset, Random Forest had the highest score among the models so it was chosen for the final model to make predictions based on the dataset's input features that it receives.
 
 ![Scores](static/First_model_scores.png)
 
@@ -56,18 +55,18 @@ from sklearn.svm import SVC
 
 ### Second model
 
-For Our second model, we chose another dataset with many more data points. We wanted to use a DNN (deep Neural Network) to get the predictions on our dataset. On this dataset, our NN takes 15 features and gives a binary output to predict Diabetes.
+For the second model, I chose another dataset with many more data points. I wanted to use a DNN (deep Neural Network) to get the predictions on the dataset. On this dataset, the NN takes 15 features and gives a binary output to predict Diabetes.
 
 #### Taks
 
 1. Check and assess the dataset to make sure of its validation
-2. Process the data using column manipulation to prepare and scale our data.
+2. Process the data using column manipulation to prepare and scale the data.
 3. Define a Neural Network that can identify if a patient has Diabetes or not.
-4. Change model parameters and explore different metrics to get the highest performance of accuracy and tune our model
-5. Repeat the process with our first dataset to compare
+4. Change model parameters and explore different metrics to get the highest performance of accuracy and tune the model
+5. Repeat the process with the first dataset to compare
 
 #### Summary of model
-Since our project was to focus on predicting diabetes, We wanted to get our recall to be as high as possible when calculating the Confusion matrix. Our first attempts gave us a 97% accuracy with a recall or 64% on our testing dataset. Pictures of its performance during the process and tuning are available in the static folder.
+Since this project was to focus on predicting diabetes, I wanted to get the recall score to be as high as possible when calculating the Confusion matrix. The first attempts gave a 97% accuracy with a recall or 64% on the testing dataset. Pictures of its performance during the process and tuning are available in the static folder.
 
 
 #### Libraries used
